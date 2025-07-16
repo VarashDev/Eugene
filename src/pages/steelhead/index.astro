@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import srcImage from "../../assets/steelhead-fishing-near-eugene-oregon.webp";
 import { Image } from "astro:assets";
 import MyH1 from "../../components/MyH1.astro";
+import Link from "../../components/Link.astro";
 ---
 <Layout 
 title="Steelhead fishing near Eugene, Oregon"
@@ -158,6 +159,9 @@ ogimage={srcImage.src}
 <p>
     Don’t overlook small creeks like <strong>Mohawk River</strong>, <strong>Fall Creek</strong>, and <strong>Mosby Creek</strong>. These often see strong returns and lower fishing pressure.
 </p>
+
+<p>Read more about <Link href="/steelhead/best-spots/" text="Best steelhead fishing spots near Eugene, Oregon" /></p>
+
 <h2>
     <strong>Proven Techniques for Catching Steelhead</strong>
 </h2>
