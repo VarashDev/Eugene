@@ -1,0 +1,232 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import srcImage from "../../assets/best-salmon-fishing-spots-eugene-oregon.png";
+import { Image } from "astro:assets";
+import MyH1 from "../../components/MyH1.astro";
+import Bests from "../../components/Bests.astro";
+---
+<Layout 
+title="Fishing Guides in Eugene, Oregon"
+description="Eugene sits where the McKenzie meets the Willamette - prime water for native trout, summer steelhead, and spring Chinook. Hiring a licensed guide helps with timing, access, safety, and technique."
+url="https://eugene.oregonfishingforum.com/guides/"
+type="article"
+site_name="Eugene Fishing"
+ogimage={srcImage.src}
+>
+    <div class="text-center">
+        <MyH1 text="Fishing Guides in Eugene, Oregon" />
+        <p class="mb-4">Eugene sits where the McKenzie meets the Willamette - prime water for native trout, summer steelhead, and spring Chinook. Hiring a licensed guide helps with timing, access, safety, and technique.</p>
+    </div>
+
+  <!-- Why book a guide? -->
+  <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4 mb-12">
+    <div class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="font-semibold text-slate-900 dark:text-slate-100">Local timing</h3>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Pros track flows, clarity, and seasonal runs on the McKenzie & Middle Fork.</p>
+    </div>
+    <div class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="font-semibold text-slate-900 dark:text-slate-100">Access & safety</h3>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Permits, safe boats, and swift-water know-how on moving rivers.</p>
+    </div>
+    <div class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="font-semibold text-slate-900 dark:text-slate-100">Gear & instruction</h3>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Rods, reels, flies/tackle included; hands-on coaching for singles or Spey.</p>
+    </div>
+    <div class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="font-semibold text-slate-900 dark:text-slate-100">Conservation-minded</h3>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Local guides follow ODFW rules and best practices for native fish.</p>
+    </div>
+  </div>
+
+  <!-- Directory heading + hint -->
+  <div class="mb-4 flex items-end justify-between gap-4">
+    <h2 class="text-2xl md:text-3xl font-semibold text-slate-900 dark:text-slate-100">Eugene-Area Guide Directory</h2>
+    <p class="text-xs md:text-sm text-slate-500 dark:text-slate-400">Confirm seasons, pricing, and meeting spots when you book.</p>
+  </div>
+
+  <!-- Directory: table (md+) -->
+  <div class="hidden md:block overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
+    <table class="w-full text-left text-sm">
+      <thead class="bg-slate-50 dark:bg-slate-800/60 text-slate-700 dark:text-slate-300">
+        <tr>
+          <th class="px-5 py-3 font-semibold">Guide / Outfitter</th>
+          <th class="px-5 py-3 font-semibold">Primary Waters / Focus</th>
+          <th class="px-5 py-3 font-semibold">Phone</th>
+          <th class="px-5 py-3 font-semibold">Website</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-slate-200 dark:divide-slate-700">
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">The Caddis Fly Angling Shop — Guided Trips</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">McKenzie & Middle Fork Willamette · Trout, steelhead</td>
+          <td class="px-5 py-4"><a href="tel:+154134267005" class="text-blue-600 hover:underline">(541) 342-7005</a></td>
+          <td class="px-5 py-4"><a href="https://www.caddisflyshop.com/guided-trips.html" class="text-blue-600 hover:underline" rel="nofollow">caddisflyshop.com/guided-trips</a></td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">Home Waters Fly Shop & Guide Service</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Local rivers · Guided trips & classes</td>
+          <td class="px-5 py-4"><a href="tel:+15413426691" class="text-blue-600 hover:underline">(541) 342-6691</a></td>
+          <td class="px-5 py-4"><a href="https://www.homewatersflyfishing.com/" class="text-blue-600 hover:underline" rel="nofollow">homewatersflyfishing.com</a></td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">Willamette Valley Fishing Guides (Will Conable)</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">McKenzie & Willamette · Fly & Spey</td>
+          <td class="px-5 py-4"><a href="tel:+15417997980" class="text-blue-600 hover:underline">(541) 799-7980</a></td>
+          <td class="px-5 py-4"><a href="https://www.willamettevalleyfishing.com/" class="text-blue-600 hover:underline" rel="nofollow">willamettevalleyfishing.com</a></td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">Riverside Fly Fishing (Alex Burgdorfer)</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">McKenzie River · Trout & summer steelhead</td>
+          <td class="px-5 py-4"><a href="tel:+15415548906" class="text-blue-600 hover:underline">(541) 554-8906</a></td>
+          <td class="px-5 py-4"><a href="https://www.oregonriversideflyfishing.com/" class="text-blue-600 hover:underline" rel="nofollow">oregonriversideflyfishing.com</a></td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">March Brown Guide Service (Josh Lusher)</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">McKenzie & Willamette · Fly fishing</td>
+          <td class="px-5 py-4"><a href="tel:+15419127712" class="text-blue-600 hover:underline">(541) 912-7712</a></td>
+          <td class="px-5 py-4"><a href="https://www.mbflyguide.com/" class="text-blue-600 hover:underline" rel="nofollow">mbflyguide.com</a></td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">Trevin Hoyt Fishing</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Coastal & valley rivers · Salmon & steelhead</td>
+          <td class="px-5 py-4"><a href="tel:+15418523302" class="text-blue-600 hover:underline">(541) 852-3302</a></td>
+          <td class="px-5 py-4"><a href="https://www.trevinhoytfishing.com/" class="text-blue-600 hover:underline" rel="nofollow">trevinhoytfishing.com</a></td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">Helfrich McKenzie Rafting / Helfrich River Outfitters</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">McKenzie River · Drift-boat fishing & rafting</td>
+          <td class="px-5 py-4"><a href="tel:+15417265039" class="text-blue-600 hover:underline">(541) 726-5039</a></td>
+          <td class="px-5 py-4"><a href="https://www.helfrichoutfitter.com/" class="text-blue-600 hover:underline" rel="nofollow">helfrichoutfitter.com</a></td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">Powell’s Guide Service (Matt Powell)</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Willamette & McKenzie · Salmon, steelhead, trout</td>
+          <td class="px-5 py-4"><a href="tel:+17208549393" class="text-blue-600 hover:underline">(720) 854-9393</a></td>
+          <td class="px-5 py-4"><a href="https://www.powellsguideservice.com/" class="text-blue-600 hover:underline" rel="nofollow">powellsguideservice.com</a></td>
+        </tr>
+        <tr class="bg-white dark:bg-slate-900">
+          <td class="px-5 py-4 font-medium text-slate-900 dark:text-slate-100">JBeard Guide Service</td>
+          <td class="px-5 py-4 text-slate-600 dark:text-slate-300">Eugene-based · Salmon & steelhead</td>
+          <td class="px-5 py-4"><a href="tel:+15415108784" class="text-blue-600 hover:underline">(541) 510-8784</a></td>
+          <td class="px-5 py-4"><a href="https://www.jbeardguideservice.com/" class="text-blue-600 hover:underline" rel="nofollow">jbeardguideservice.com</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Cards (sm) -->
+  <div class="md:hidden space-y-4">
+    <!-- repeatable card pattern -->
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">The Caddis Fly Angling Shop — Guided Trips</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">McKenzie & Middle Fork Willamette · Trout, steelhead</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15413427005" class="inline-flex items-center rounded-xl border px-3 py-1.5 text-sm">(541) 342-7005</a>
+        <a href="https://www.caddisflyshop.com/guided-trips.html" rel="nofollow" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Home Waters Fly Shop & Guide Service</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Local rivers · Guided trips & classes</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15413426691" class="inline-flex items-center rounded-xl border px-3 py-1.5 text-sm">(541) 342-6691</a>
+        <a href="https://www.homewatersflyfishing.com/" rel="nofollow" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Willamette Valley Fishing Guides</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">McKenzie & Willamette · Fly & Spey</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15417997980" class="inline-flex items-center rounded-xl border px-3 py-1.5 text-sm">(541) 799-7980</a>
+        <a href="https://www.willamettevalleyfishing.com/" rel="nofollow" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Riverside Fly Fishing</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">McKenzie River · Trout & summer steelhead</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15415548906" class="inline-flex items-center rounded-xl border px-3 py-1.5 text-sm">(541) 554-8906</a>
+        <a href="https://www.oregonriversideflyfishing.com/" rel="nofollow" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">March Brown Guide Service</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">McKenzie & Willamette · Fly fishing</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15419127712" class="inline-flex items-center rounded-xl border px-3 py-1.5 text-sm">(541) 912-7712</a>
+        <a href="https://www.mbflyguide.com/" rel="nofollow" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Trevin Hoyt Fishing</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Coastal & valley rivers · Salmon & steelhead</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15418523302" class="inline-flex items-center rounded-xl border px-3 py-1.5 text-sm">(541) 852-3302</a>
+        <a href="https://www.trevinhoytfishing.com/" rel="nofollow" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Helfrich McKenzie Rafting</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">McKenzie River · Drift-boat fishing & rafting</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15417265039" class="inline-flex items-center rounded-xl border px-3 py-1.5 text-sm">(541) 726-5039</a>
+        <a href="https://www.helfrichoutfitter.com/" rel="nofollow" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Powell’s Guide Service</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Willamette & McKenzie · Salmon, steelhead, trout</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+17208549393" class="inline-flex items-center rounded-xl border px-3 py-1.5 text-sm">(720) 854-9393</a>
+        <a href="https://www.powellsguideservice.com/" rel="nofollow" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">JBeard Guide Service</h3>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Eugene-based · Salmon & steelhead</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15415108784" class="inline-flex items-center rounded-xl border px-3 py-1.5 text-sm">(541) 510-8784</a>
+        <a href="https://www.jbeardguideservice.com/" rel="nofollow" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Website</a>
+      </div>
+    </article>
+  </div>
+
+  <!-- How to choose -->
+  <section class="mt-12">
+    <h2 class="text-2xl md:text-3xl font-semibold text-slate-900 dark:text-slate-100">How to choose the right guide</h2>
+    <ol class="mt-4 grid gap-4 md:grid-cols-2">
+      <li class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+        <span class="block font-medium text-slate-900 dark:text-slate-100">Match the season</span>
+        <span class="mt-1 block text-sm text-slate-600 dark:text-slate-300">Spring Chinook (late winter–spring), summer steelhead (late spring–fall), trout year-round with seasonal tactics.</span>
+      </li>
+      <li class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+        <span class="block font-medium text-slate-900 dark:text-slate-100">Pick a style</span>
+        <span class="mt-1 block text-sm text-slate-600 dark:text-slate-300">Walk-in vs. drift boat; single-hand vs. Trout Spey; family-friendly vs. intensive instruction.</span>
+      </li>
+      <li class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+        <span class="block font-medium text-slate-900 dark:text-slate-100">Confirm what’s included</span>
+        <span class="mt-1 block text-sm text-slate-600 dark:text-slate-300">Gear, flies/bait, lunch, fish cleaning, waders, heaters, and group size.</span>
+      </li>
+      <li class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-5 shadow-sm">
+        <span class="block font-medium text-slate-900 dark:text-slate-100">Check current regs</span>
+        <span class="mt-1 block text-sm text-slate-600 dark:text-slate-300">Rules change by waterbody. Review ODFW’s Willamette Zone page before you go.</span>
+      </li>
+    </ol>
+  </section>
+
+  <!-- Helpful tip -->
+  <div class="mt-8 rounded-2xl border border-amber-200 bg-amber-50 dark:border-amber-400/30 dark:bg-amber-900/20 p-4 text-amber-900 dark:text-amber-200">
+    <p class="text-sm">
+      Tip: Start with <a href="https://myodfw.com/fishing/willamette-zone" target="_blank" rel="noopener" class="underline decoration-amber-400 underline-offset-2 hover:opacity-90">ODFW’s Willamette Zone</a> for regulations and in-season updates. Free Fishing Weekends pop up each year—handy for beginners and families.
+    </p>
+  </div>
+
+</Layout>

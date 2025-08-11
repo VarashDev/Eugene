@@ -1,0 +1,215 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import srcImage from "../../assets/best-salmon-fishing-spots-eugene-oregon.png";
+import { Image } from "astro:assets";
+import MyH1 from "../../components/MyH1.astro";
+import Bests from "../../components/Bests.astro";
+---
+<Layout 
+title="Fishing Classes & Clinics in Eugene, Oregon"
+description="Learn to cast on the McKenzie and Willamette or level up with local clinics. This neutral directory links to providers and clubs—confirm dates, prices, and meeting spots on their sites."
+url="https://eugene.oregonfishingforum.com/classes-clinics/"
+type="article"
+site_name="Eugene Fishing"
+ogimage={srcImage.src}
+>
+    <div class="text-center">
+        <MyH1 text="Fishing Classes & Clinics in Eugene, Oregon" />
+        <p class="mb-4">Learn to cast on the McKenzie and Willamette or level up with local clinics. This neutral directory links to providers and clubs—confirm dates, prices, and meeting spots on their sites.</p>
+    </div>
+
+<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4 mb-12">
+    <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="font-semibold">Get the fundamentals</h3>
+      <p class="mt-2 text-sm text-slate-600">Casting mechanics, knots, reading water, safe wading & boat etiquette.</p>
+    </div>
+    <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="font-semibold">Local patterns & seasons</h3>
+      <p class="mt-2 text-sm text-slate-600">Trout year-round; spring Chinook & summer steelhead timing varies.</p>
+    </div>
+    <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="font-semibold">Hands-on practice</h3>
+      <p class="mt-2 text-sm text-slate-600">Small groups and on-water reps build confidence fast.</p>
+    </div>
+    <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="font-semibold">Community</h3>
+      <p class="mt-2 text-sm text-slate-600">Clubs host clinics, fly-tying nights, and guest speakers.</p>
+    </div>
+  </div>
+
+  <!-- Directory heading -->
+  <div class="mb-4 flex items-end justify-between gap-4">
+    <h2 class="text-2xl md:text-3xl font-semibold text-slate-900">Eugene Fishing Class & Clinic Providers</h2>
+    <p class="text-xs md:text-sm text-slate-500">Tip: ask about class size, included gear, and meeting location.</p>
+  </div>
+
+  <!-- Desktop table -->
+  <div class="hidden md:block overflow-hidden rounded-2xl border border-slate-200 shadow-sm">
+    <table class="w-full text-left text-sm bg-white">
+      <thead class="bg-slate-50 text-slate-700">
+        <tr>
+          <th class="px-5 py-3 font-semibold">Provider</th>
+          <th class="px-5 py-3 font-semibold">Focus</th>
+          <th class="px-5 py-3 font-semibold">Phone</th>
+          <th class="px-5 py-3 font-semibold">Website</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-slate-200">
+        <tr>
+          <td class="px-5 py-4 font-medium">The Caddis Fly Angling Shop — Classes & Guided Instruction</td>
+          <td class="px-5 py-4 text-slate-600">Intro to fly fishing, casting, tying; on-water instruction</td>
+          <td class="px-5 py-4"><a href="tel:+15413427005" class="text-blue-600 hover:underline">(541) 342-7005</a></td>
+          <td class="px-5 py-4">
+            <a href="https://oregonflyfishingblog.com/category/classes-and-instruction/" class="text-blue-600 hover:underline" rel="nofollow">Classes & instruction</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="px-5 py-4 font-medium">Home Waters Fly Shop — Classes</td>
+          <td class="px-5 py-4 text-slate-600">Beginner “Intro to Fly Fishing”, casting clinics</td>
+          <td class="px-5 py-4"><a href="tel:+15413426691" class="text-blue-600 hover:underline">(541) 342-6691</a></td>
+          <td class="px-5 py-4">
+            <a href="https://www.homewatersflyfishing.com/current-classes/" class="text-blue-600 hover:underline" rel="nofollow">Current classes</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="px-5 py-4 font-medium">Riverside Fly Fishing — Lessons (Eugene)</td>
+          <td class="px-5 py-4 text-slate-600">Fly-casting lessons (single-hand & Spey) + guided days</td>
+          <td class="px-5 py-4"><a href="tel:+15415548906" class="text-blue-600 hover:underline">(541) 554-8906</a></td>
+          <td class="px-5 py-4">
+            <a href="https://www.oregonriversideflyfishing.com/" class="text-blue-600 hover:underline">oregonriversideflyfishing.com</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="px-5 py-4 font-medium">ODFW Workshops & Family Fishing Events</td>
+          <td class="px-5 py-4 text-slate-600">Beginner instruction; gear provided at events</td>
+          <td class="px-5 py-4 text-slate-500">—</td>
+          <td class="px-5 py-4">
+            <a href="https://myodfw.com/workshops-and-events" class="text-blue-600 hover:underline" target="_blank" rel="noopener">myodfw.com/workshops-and-events</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="px-5 py-4 font-medium">Cascade Family Flyfishers — Club</td>
+          <td class="px-5 py-4 text-slate-600">Monthly programs; clinics, tying nights, local outings</td>
+          <td class="px-5 py-4 text-slate-500">—</td>
+          <td class="px-5 py-4">
+            <a href="https://cascadefamilyflyfishers.org/" class="text-blue-600 hover:underline" target="_blank" rel="noopener">cascadefamilyflyfishers.org</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="px-5 py-4 font-medium">McKenzie Flyfishers — Club</td>
+          <td class="px-5 py-4 text-slate-600">Education-focused club; speakers & skill building</td>
+          <td class="px-5 py-4 text-slate-500">—</td>
+          <td class="px-5 py-4">
+            <a href="https://www.mckenzieflyfishers.org/" class="text-blue-600 hover:underline" target="_blank" rel="noopener">mckenzieflyfishers.org</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="px-5 py-4 font-medium">Bass Pro Shops — Springfield (store seminars vary)</td>
+          <td class="px-5 py-4 text-slate-600">Occasional seminars/events; call or check store page</td>
+          <td class="px-5 py-4"><a href="tel:+15413495760" class="text-blue-600 hover:underline">(541) 349-5760</a></td>
+          <td class="px-5 py-4">
+            <a href="https://stores.basspro.com/us/or/springfield/2800-gateway-street.html" class="text-blue-600 hover:underline" target="_blank" rel="noopener">Store page</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Mobile cards -->
+  <div class="md:hidden space-y-4">
+    <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="text-lg font-semibold">The Caddis Fly Angling Shop — Classes & Instruction</h3>
+      <p class="mt-1 text-sm text-slate-600">Intro classes, casting & tying; on-water instruction</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15413427005" class="inline-flex items-center rounded-xl border border-slate-200 px-3 py-1.5 text-sm">(541) 342-7005</a>
+        <a href="https://oregonflyfishingblog.com/category/classes-and-instruction/" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Classes</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="text-lg font-semibold">Home Waters Fly Shop — Classes</h3>
+      <p class="mt-1 text-sm text-slate-600">Beginner “Intro to Fly Fishing”, casting clinics</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15413426691" class="inline-flex items-center rounded-xl border border-slate-200 px-3 py-1.5 text-sm">(541) 342-6691</a>
+        <a href="https://www.homewatersflyfishing.com/current-classes/" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">See classes</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="text-lg font-semibold">Riverside Fly Fishing — Lessons</h3>
+      <p class="mt-1 text-sm text-slate-600">Casting lessons (single-hand & Spey) + guided trips</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15415548906" class="inline-flex items-center rounded-xl border border-slate-200 px-3 py-1.5 text-sm">(541) 554-8906</a>
+        <a href="https://www.oregonriversideflyfishing.com/" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="text-lg font-semibold">ODFW Workshops & Family Fishing Events</h3>
+      <p class="mt-1 text-sm text-slate-600">Beginner instruction; equipment provided at events</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <span class="inline-flex items-center rounded-xl border border-slate-200 px-3 py-1.5 text-sm text-slate-500">—</span>
+        <a href="https://myodfw.com/workshops-and-events" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Events</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="text-lg font-semibold">Cascade Family Flyfishers — Club</h3>
+      <p class="mt-1 text-sm text-slate-600">Programs, clinics & tying nights</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <span class="inline-flex items-center rounded-xl border border-slate-200 px-3 py-1.5 text-sm text-slate-500">—</span>
+        <a href="https://cascadefamilyflyfishers.org/" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="text-lg font-semibold">McKenzie Flyfishers — Club</h3>
+      <p class="mt-1 text-sm text-slate-600">Education-focused; monthly programs & skills</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <span class="inline-flex items-center rounded-xl border border-slate-200 px-3 py-1.5 text-sm text-slate-500">—</span>
+        <a href="https://www.mckenzieflyfishers.org/" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="text-lg font-semibold">Bass Pro Shops — Springfield</h3>
+      <p class="mt-1 text-sm text-slate-600">Occasional seminars/events; call to confirm</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15413495760" class="inline-flex items-center rounded-xl border border-slate-200 px-3 py-1.5 text-sm">(541) 349-5760</a>
+        <a href="https://stores.basspro.com/us/or/springfield/2800-gateway-street.html" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Store page</a>
+      </div>
+    </article>
+  </div>
+
+  <!-- How to choose -->
+  <section class="mt-12">
+    <h2 class="text-2xl md:text-3xl font-semibold text-slate-900">How to choose the right class</h2>
+    <ol class="mt-4 grid gap-4 md:grid-cols-2">
+      <li class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+        <span class="block font-medium text-slate-900">Match your goal</span>
+        <span class="mt-1 block text-sm text-slate-600">New to fishing? Start with an intro/ODFW event. Want Trout Spey? Ask for two-hand-specific clinics.</span>
+      </li>
+      <li class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+        <span class="block font-medium text-slate-900">Ask about class size</span>
+        <span class="mt-1 block text-sm text-slate-600">Smaller groups = more reps & feedback. Many on-water clinics cap at 4–6 anglers.</span>
+      </li>
+      <li class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+        <span class="block font-medium text-slate-900">What’s included</span>
+        <span class="mt-1 block text-sm text-slate-600">Rods/reels/flies provided? Waders required? Are permits/park fees extra?</span>
+      </li>
+      <li class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+        <span class="block font-medium text-slate-900">Confirm location & access</span>
+        <span class="mt-1 block text-sm text-slate-600">Some meet in-shop; others on local rivers/ponds. Verify meeting points and accessibility.</span>
+      </li>
+    </ol>
+  </section>
+
+  <!-- Helpful tip -->
+  <div class="mt-8 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-amber-900">
+    <p class="text-sm">
+      Tip: Oregon hosts <span class="font-medium">Free Fishing Weekends</span>—perfect for pairing a clinic with practice. Check the
+      <a href="https://myodfw.com/workshops-and-events/family-fishing-events-free-fishing-weekend-events" class="underline decoration-amber-400 underline-offset-2">ODFW events calendar</a> for dates.
+    </p>
+  </div>
+
+</Layout>
